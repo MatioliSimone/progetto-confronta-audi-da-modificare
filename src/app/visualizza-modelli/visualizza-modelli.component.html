@@ -1,0 +1,18 @@
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col" *ngFor="let modello of elencoModelli;index as i" [ngClass]="{'active':corrente==i}" (click)="corrente=i">
+    <div class="card-body">
+      <img src="{{modello.img}}" class="card-img-top">
+      <div class="card">
+        <h5>{{modello.id}}</h5>
+        <hr>
+        <p>{{modello.prezzo}}</p>
+        <p>{{modello.cv}}</p>
+        <p>{{modello.peso}}</p>
+        <p>{{modello.cv}}</p>
+        <p>{{modello.motore}}</p>
+        <button (click)="addConfronto()">aggiungi al confronto</button>
+        <button (click)="remConfronto()">rimuovi dal confronto</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+div {
+  text-align: center;
+}
+.bottone {
+  width: 5cm;
+  height: 5cm;
+  background-color: #ff0000;
+  background-image: url("https://image.shutterstock.com/image-vector/close-icon-isolated-on-transparent-260nw-654664285.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+button:hover {
+  color: white;
+  background-color: black;
+}
+.rem {
+  background-color: red;
+}
